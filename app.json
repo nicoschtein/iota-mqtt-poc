@@ -1,0 +1,6 @@
+{
+  "name": "IOTA MQTT PoC,
+  "description": "An IOTA MQTT Proof of Concept",
+  "keywords": ["iota", "nqtt"],
+  "image": "heroku/nodejs"
+}
