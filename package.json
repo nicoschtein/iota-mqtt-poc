@@ -16,6 +16,8 @@
   "dependencies": {
     "async": "^2.3.0",
     "iota.lib.js": "^0.2.6",
-    "mqtt": "^2.6.2"
+    "mqtt": "^2.6.2",
+    "node-cleanup": "^2.1.2",
+    "url": "^0.11.0"
   }
 }
