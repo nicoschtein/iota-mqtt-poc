@@ -1,12 +1,24 @@
 # iota-mqtt-poc
 [IOTA](https://www.iotatoken.com/) Proof of Concept, service that stores MQTT messages on the tangle.
+
+## Background
+[IOTA Javascript Library Hello World Tutorial](https://learn.iota.org/tutorial/payments-and-messaging-leaderboard)
+
 ## Requirements
 Make sure you have [Node.js](http://nodejs.org/) and the [Heroku Toolbelt](https://toolbelt.heroku.com/) installed.
+
+### Node Packages
+Using [MQTT.js](https://www.npmjs.com/package/mqtt) as MQTT client. [Open Source](https://github.com/mqttjs/MQTT.js) 
+
+Using [iota.lib.js](https://www.npmjs.com/package/iota.lib.js) to connect to IOTA tangle. [Open Source](https://github.com/iotaledger/iota.lib.js) 
+
+Using [Async](https://www.npmjs.com/package/async) to handle queues. [Open Source](https://github.com/caolan/async) 
 
 ## Cloning & Running locally
 ```sh
 git clone git@github.com:nicoschtein/iota-mqtt-poc.git # or clone your own fork
 cd iota-mqtt-poc
+npm install
 heroku local
 ```
 
