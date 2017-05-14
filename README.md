@@ -8,11 +8,15 @@
 Make sure you have [Node.js](http://nodejs.org/) and the [Heroku Toolbelt](https://toolbelt.heroku.com/) installed.
 
 ### Node Packages
-Using [MQTT.js](https://www.npmjs.com/package/mqtt) as MQTT client. [Open Source](https://github.com/mqttjs/MQTT.js) 
-
 Using [iota.lib.js](https://www.npmjs.com/package/iota.lib.js) to connect to IOTA tangle. [Open Source](https://github.com/iotaledger/iota.lib.js) 
 
+Using [MQTT.js](https://www.npmjs.com/package/mqtt) as MQTT client. [Open Source](https://github.com/mqttjs/MQTT.js) 
+
 Using [Async](https://www.npmjs.com/package/async) to handle queues. [Open Source](https://github.com/caolan/async) 
+
+Using [node-cleanup](https://www.npmjs.com/package/node-cleanup) to properly close connections on exit. [Open Source](https://github.com/jtlapp/node-cleanup) 
+
+Using [url](https://www.npmjs.com/package/url) to parse full URL. [Open Source](https://github.com/defunctzombie/node-url) 
 
 ## Cloning & Running locally
 ```sh
