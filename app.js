@@ -46,7 +46,7 @@ var iotajs = new IOTA({
 // Parse MQTT broker connection full URL
 var mqtt_url = URL.parse(MQTT_FULL_URL);
 var auth = (mqtt_url.auth || ':').split(':');
-var url = "mqtt://" + mqtt_url.host;
+var url = mqtt_url.protocol + "//" + mqtt_url.host;
 
 // Setup MQTT broker connection options
 var options = {
