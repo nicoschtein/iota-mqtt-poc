@@ -60,7 +60,7 @@ var IOTA_TAG = process.env.IOTA_TAG || 'iota-mqtt-poc';
 // END ENVIRONMENT VARS
 //
 ```
-Check Environmental Variables for a description of each var. [LINKLINKLINKLINK](asdfadsfasd)
+Check [Environmental Variables](https://github.com/nicoschtein/iota-mqtt-poc/blob/master/README.md) for a description of each var. 
 
 We will also need a var to count our tasks.
 ```javascript
@@ -201,7 +201,7 @@ Now, finally, we got to the good part. This is where **IOTA** plays the lead rol
 We define what will be done with each Task, in our case we want the payload from the MQTT messages to be stored on the Tangle. 
 
 > To store information on the Tangle, you need to send a transaction to a recipient address (in our case `IOTA_ADDRESS`) with the information you want “tryte-encoded” on the `message` field of the transaction. This means that you need to encode the MQTT message that comes as an ASCII string to Trytes. Luckily, the `iota.lib.js` already has two helpers `toTrytes` and `fromTrytes` that will make your like easier.
-> If you want to know more about Binary vs Trinary concept,  [check the official documentation](asdfadsfasd).
+> If you want to know more about Binary vs Trinary concept,  [check](https://dev.to/buntine/the-balanced-ternary-machines-of-soviet-russia) [these](http://datagenetics.com/blog/december22015/index.html)  [four](https://web.williams.edu/Mathematics/sjmiller/public_html/105Sp10/addcomments/Hayes_ThirdBase.htm) [links](homepage.divms.uiowa.edu/~jones/ternary/) .
 
 > Another important note, you will see here that the value of the transaction is `0`, we are not moving any **IOTA** tokens with this transfer, since we just want to store information on the Tangle. We don’t want to spend tokens every time we store information or pay fees for every transfer, and with **IOTA** there is no need to either, sounds cool right?
 
