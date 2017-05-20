@@ -1,5 +1,5 @@
 # iota-mqtt-poc
-[IOTA](https://www.iotatoken.com/) Proof of Concept, service that stores MQTT messages on the tangle.
+[IOTA](https://iota.org/) Proof of Concept, service that stores MQTT messages on the tangle.
 
 ## Background
 [IOTA Javascript Library Hello World Tutorial](https://learn.iota.org/tutorial/payments-and-messaging-leaderboard)
