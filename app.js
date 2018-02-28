@@ -121,7 +121,7 @@ var txQueue = async.queue(function(task, done) {
     console.log('Processing task ' + task.id + '.');
 
     var transfers = [{
-        'address': IOTA_ADDRESS,
+        'address': iotajs.utils.noChecksum(IOTA_ADDRESS),
         'value': 0,
         'message': iotajs.utils.toTrytes(task.message),
         'tag': iotajs.utils.toTrytes(IOTA_TAG)
