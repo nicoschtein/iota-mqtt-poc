@@ -121,14 +121,14 @@ var txQueue = async.queue(function(task, done) {
     console.log('Processing task ' + task.id + '.');
 
     var transfers = [{
-        'address': IOTA_ADDRESS,
+        'address': iotajs.utils.noChecksum(IOTA_ADDRESS),
         'value': 0,
         'message': iotajs.utils.toTrytes(task.message),
         'tag': iotajs.utils.toTrytes(IOTA_TAG)
     }];
     var seed = IOTA_SEED;
     var depth = 9;
-    var minWeightMagnitude = 18;
+    var minWeightMagnitude = 18; //set magnitude to 14 if used on mainnet
 
     iotajs.api.sendTransfer(seed, depth, minWeightMagnitude, transfers, function(error,success) {
         if (!error) {
